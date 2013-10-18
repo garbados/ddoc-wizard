@@ -4,7 +4,13 @@ var couchapp = require('couchapp'),
 ddoc = {
   _id: '_design/derp',
   views: {
-    // your view code
+    // your secondary indexes
+    test: {
+      map: function (doc) {
+        emit(doc._id, 1);
+      },
+      reduce: '_stats'
+    }
   },
   lists: {
     // your list functions
