@@ -1,0 +1,36 @@
+{
+  "name": "ddoc-wizard",
+  "version": "0.0.0",
+  "description": "Manage your CouchDB / Cloudant design documents using Grunt.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garbados/ddoc-wizard"
+  },
+  "keywords": [
+    "couchdb",
+    "cloudant",
+    "grunt"
+  ],
+  "author": "Max Thayer <garbados@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garbados/ddoc-wizard/issues"
+  },
+  "devDependencies": {
+    "grunt-template": "~0.2.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-prompt": "~0.1.2",
+    "grunt": "~0.4.1",
+    "matchdep": "~0.3.0",
+    "grunt-couchapp": "~0.2.1",
+    "mocha": "~1.13.0",
+    "couchapp": "~0.10.0"
+  }
+}
