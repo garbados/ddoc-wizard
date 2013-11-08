@@ -10,6 +10,7 @@ Then, to install ddoc-wizard, do this:
 
     git clone git@github.com:garbados/ddoc-wizard.git
     cd ddoc-wizard
+    npm install
     grunt init
     # answer grunt's questions to configure the wizard
 
