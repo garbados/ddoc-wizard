@@ -49,6 +49,7 @@ module.exports = function(grunt) {
 
   // Load plugins
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  grunt.loadTasks('./tasks');
 
   // Default task(s).
   grunt.registerTask('default', [

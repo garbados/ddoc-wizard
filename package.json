@@ -31,6 +31,7 @@
     "matchdep": "~0.3.0",
     "grunt-couchapp": "~0.2.1",
     "mocha": "~1.13.0",
-    "couchapp": "~0.10.0"
+    "couchapp": "~0.10.0",
+    "async": "~0.2.9"
   }
 }
