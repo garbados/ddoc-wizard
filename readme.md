@@ -21,11 +21,23 @@ The `ddocs` folder will contain your design documents, under folders named after
 
 In essence, it's everything you'd write on the server, but as a JavaScript object rather than raw JSON, which lets you verify its correctness more easily. Also, JavaScript is less of a pain to write than raw JSON, or at least that's my opinion.
 
+## Commands
+
+### grunt
+
 To upload your design documents, do this:
 
     grunt
 
-Our example `derp.js` will be uploaded to the `examples` database (since it's stored under the `examples` folder) as `_design/derp` since that's the `_id` value in the `derp.js` file.
+Our example `derp.js` will be uploaded to the `examples` database, since it's stored under the `examples` folder, as `_design/derp`, since it's names `derp.js`.
+
+## grunt ddoc
+
+You can use `grunt ddoc` to create new design docs, like this:
+
+    grunt ddoc --db examples --ddoc derp
+
+This will create a `derp.js` file at `ddocs/examples/derp.js`.
 
 ## License
 

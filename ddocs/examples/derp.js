@@ -1,8 +1,10 @@
-var couchapp = require('couchapp'),
-    path = require('path');
+function filename () {
+    var path = __filename.split('/');
+    return path[path.length - 1].split('.')[0];
+}
 
-ddoc = {
-  _id: '_design/derp',
+module.exports = {
+  _id: ['_design', filename()].join('/'),
   views: {
     // your secondary indexes
     test: {
@@ -21,5 +23,3 @@ ddoc = {
   // and any other attributes of your design doc
   // like, say, update handlers and search indexes
 };
-
-module.exports = ddoc;
